@@ -1,0 +1,20 @@
+#!/bin/bash
+
+arr=(1 2 3 4 2 1)
+
+seen=()
+
+for num in "${arr[@]}"
+do
+	for snum in "${seen[@]}"
+	do
+		if [[ "$num" -eq "$snum" ]]
+		then
+			echo "$num"
+			exit 0
+		fi
+	done
+	seen+=("$num")
+done
+
+
