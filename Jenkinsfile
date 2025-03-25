@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "Welcome"
+echo "Welcome to githook"
 		
